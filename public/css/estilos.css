@@ -1,0 +1,536 @@
+:root {
+    --breyna-blue: #014494;
+    --breyna-blue-300: #0087DF;
+    --breyna-blue-100: #EFF4FE;
+    --breyna-black: #181C35;
+    --breyna-water-green: #52C4DA;
+    --breyna-white: #5E4E4E4;
+    --breyna-gray: #6A6A6A;
+  }
+
+.fill-breyna-blue {
+    fill: var(--breyna-blue-300);
+}
+
+.breyna-text-gray {
+    color: var(--breyna-gray);
+}
+
+.breyna-bg-gray {
+    background-color: var(--breyna-gray);
+}
+
+.bryena-bg-blue {
+    background-color: var(--breyna-blue);
+}
+
+.breyna-text-blue {
+    color: var(--breyna-blue);
+}
+
+.breyna-text-white {
+    color: var(--breyna-white);
+}
+
+.breyna-text-water {
+    color: var(--breyna-water-green);
+}
+
+.breyna-bg-water {
+    background-color: var(--breyna-water-green);
+}
+
+.breyna-bg-blue-300 {
+    background-color: var(--breyna-blue-300);
+}
+
+.brenya-text-blue-light {
+    color: var(--breyna-blue-300);
+}
+
+.breyna-bg-blue-100 {
+    background-color: var(--breyna-blue-100);
+}
+
+nav {
+    z-index: 777;
+}
+
+.breyna-text-black {
+    color: var(--breyna-black);
+}
+
+.hero-bg {
+    background-image: url(../imgs/index/breyna-hero-bg.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: -3;
+}
+
+.hero-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 60%;
+    background-color: var(--breyna-blue);
+    pointer-events: none;
+    z-index: -2;
+    mix-blend-mode: multiply;
+}
+
+.trama {
+    position: absolute;
+    background-size: cover;
+    background-position: bottom left;
+    width: 100%;
+    background-image: url(../imgs/index/trama.png);
+    z-index: -1;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    opacity: 60%;
+}
+
+.trama-mob {
+    height: 40rem;
+    position: absolute;
+    left: 0;
+    background-size: cover;
+    background-position: bottom left;
+    width: 100%;
+    bottom: 0rem;
+    background-image: url(../imgs/decoracion/trama-mob.svg);
+    z-index: -1;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    /* transform: matrix(0.9, 0.43, -0.43, 0.9, 0, 0); */
+}
+
+.trama2 {
+    z-index: -10;
+    background-image: 
+    url(../imgs/index/trama.png),
+    url(../imgs/decoracion/punteo3Alt-01.svg);
+    background-size: cover, contain;
+    background-repeat: no-repeat, repeat;
+    top: 0;
+    left: 0;
+    height: 50rem;
+    opacity: 60%;
+}
+
+@media(max-width:800px) {
+    .trama2 {
+        height: 80rem;
+        opacity: 30%;
+        background-size: cover, contain;
+    }
+}
+
+.breyna-hero-h1 {
+    width: 47ch;
+}
+
+/* Set the size of the div element that contains the map */
+.map {
+    /* filter: grayscale(100%);          */
+    pointer-events: all!important;
+}
+
+.maps-section::after {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(0,0,0,0) 100%);
+}
+
+.breyna-bg-linear-gradient {
+    background: linear-gradient(115.65deg, #003676 -0.16%, #5EDCF4 133.54%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+}
+
+.breyna-bg-linear-gradient-light {
+    background: linear-gradient(115.65deg, #52C4DA -0.16%, #0087DF 133.54%), #FFFFFF;
+}
+
+.breyna-heart {
+    width: 5rem;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 4s ease-in-out forwards;
+    fill:rgba(82, 196, 218,0);
+    stroke: #52C4DA;
+
+}
+
+.logo-text {
+    fill:rgba(82, 196, 218,1);
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+      fill:rgba(82, 196, 218,1);
+      stroke:rgba(82, 196, 218,0);
+    }
+  }
+
+  /* 
+=============
+MEDIA QUERIES
+=============
+*/
+
+.breyna-svg-logo {
+    height: 2.5rem;
+    width: 12rem;
+}
+
+.nav-ul-cont:hover {
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.nav-ul {
+    border-top: .35rem solid white;
+}
+
+.medico-container-desktop {
+    max-width: 17rem;;
+}
+
+@media (max-width: 2560px) {
+
+    :root {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 1920px) {
+
+    :root {
+        font-size: 1.125rem;
+    }
+/* 
+    .nav-dropdown {
+        bottom: -250px
+    } */
+
+}
+
+@media (max-width: 1536px) {
+
+    :root {
+        font-size: .9rem;
+    }
+
+    /* Este es el mio normal! */
+    /* .nav-dropdown {
+        bottom: -250px
+    } */
+
+}
+
+@media (max-width: 1420px) {
+
+    :root {
+        font-size: 1rem;
+    }
+
+    /* .nav-dropdown {
+        bottom: -250px
+    } */
+
+}
+
+/* Zoom 110% */
+@media (max-width: 1400px) {
+
+    :root {
+        font-size: .82rem;
+    }
+
+    /* .nav-dropdown {
+        bottom: -235px
+    } */
+}
+
+/* Zoom 125% */
+@media (max-width: 1250px) {
+
+    :root {
+        font-size: .73rem;
+    }
+
+    /* .nav-dropdown {
+        bottom: -212px
+    }*/
+} 
+
+/* Zoom 150% */
+@media (max-width: 1228px) {
+
+    :root {
+        font-size: .59rem;
+    }
+
+    /* .nav-dropdown {
+        bottom: -185px;
+    } */
+
+    .breyna-svg-logo {
+        height: 26px;
+    }
+}
+
+@media (max-width: 800px) {
+    .medico-container-desktop {
+        max-width: none;
+    }
+
+    nav * {
+        color: white!important;
+    }
+}
+
+
+#lineasChicas_1_ {
+    opacity: 1;
+}
+
+#textos_1_ {
+    opacity: 1;
+    animation: circulosSvg 1s ease-in-out forwards;
+    
+}
+
+#iconos_1_ {
+    opacity: 1;
+}
+
+
+#lineas_1_ {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    animation: dashSvg 4s ease-in-out forwards;
+}
+
+@keyframes dashSvg {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+#circulos_1_ {
+    opacity: 0;
+    animation: circulosSvg 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes circulosSvg {
+to {
+    opacity: 1;
+}
+}
+
+.textoMov {
+    fill: red;
+}
+
+#texto1_1_, #texto2_1_, #texto3_1_, #texto4_1_, 
+#_x31_icono_1_, #_x32_icono_1_, #_x33_icono_1_, #_x34_icono_1_{
+    opacity: 0;
+    transform: translateY(10%);
+    /* animation: textosArriba .5s ease-in-out forwards; */
+}
+
+#texto5_1_, #texto6_1_, #texto7_1_, #texto8_1_, 
+#_x35_icono_1_, #_x36_icono_1_, #_x37_icono_1_, #_x38_icono_1_{
+    opacity: 0;
+    transform: translateY(-10%);
+    animation: textosArriba .5s ease-in-out forwards;
+}
+
+#texto1_1_.delay {animation-delay: 1s!important;}
+#_x31_icono_1_.delay {animation-delay: 1.1s!important;}
+
+#texto2_1_.delay {animation-delay: 1.33s!important;}
+#_x32_icono_1_.delay {animation-delay: 1.43s!important;}
+
+#texto3_1_.delay {animation-delay: 1.66s!important;}
+#_x33_icono_1_.delay {animation-delay: 1.76s!important;}
+
+#texto4_1_.delay {animation-delay: 1.99s!important;}
+#_x34_icono_1_.delay  {animation-delay: 2.09s!important;}
+
+#texto5_1_.delay {animation-delay: 2.32s!important;}
+#_x35_icono_1_.delay {animation-delay: 2.42s!important;}
+
+#texto6_1_.delay {animation-delay: 2.65s!important;}
+#_x36_icono_1_.delay {animation-delay: 2.75s!important;}
+
+#texto7_1_.delay {animation-delay: 2.98s!important;}
+#_x37_icono_1_.delay {animation-delay: 3.08s!important;}
+
+#texto8_1_ {animation-delay: 3.31s!important}
+
+#_x38_icono_1_  {animation-delay: 3.41s!important;}
+
+@keyframes textosArriba {
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+#chicasArriba_1_ {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+
+#chicasAbajo_1_ {
+    stroke-dasharray: 1400;
+    stroke-dashoffset: 1400;
+}
+
+@keyframes asd {
+    to {
+    
+      stroke-dashoffset: 2800;
+    }
+  }
+
+.icon-custom {
+    padding: .25rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.close-svg {
+    padding: .8rem;
+    background-image: url(../imgs/icons/close.svg);
+}
+
+.close-gray-svg {
+    padding: .8rem;
+    background-image: url(../imgs/icons/close-gray.svg);
+}
+
+.flechita-svg {
+    background-image: url(../imgs/icons/flechita.svg);
+}
+
+.flechita-blanca-svg {
+    background-image: url(../imgs/icons/flechita-blanca.svg);
+}
+
+.flechita-atras-svg {
+    background-image: url(../imgs/icons/flechita-atras.svg);
+}
+
+.arrow {
+    border: solid var(--breyna-blue);
+    border-width: 0 0.125rem 0.125em 0;
+    display: inline-block;
+    padding: 0.1875rem;
+  }
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.hero-dr-estol {
+    background-image: url(../imgs/dr-estol/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+
+.hero-dr-estol::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(90.17deg, rgba(0, 58, 126, 0.65) 52.08%, rgba(0, 58, 126, 0) 70%);
+    transform: rotate(180deg);
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+@media (max-width: 800px) {
+
+    .hero-dr-estol {
+        background-image: url(../imgs/dr-estol/hero-mobile.jpg);
+        min-height: 42rem;
+        background-position: 10% 0%;
+    }
+
+    .hero-dr-estol::after {
+        background: rgb(0,58,126);
+        background: linear-gradient(360deg, rgba(0,58,126,0.65) 30%, rgba(255,255,255,0) 100%);
+        transform: rotate(0deg);
+    }
+
+    .breyna-heart {
+        width: 5rem;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash 4s ease-in-out forwards;
+        fill: white;
+        stroke: #fff;
+    
+    }
+    
+    .logo-text {
+        fill:#fff;
+    }
+    
+    @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+          fill:rgba(255, 255, 255,1);
+          stroke:rgba(255, 255, 255,0);
+        }
+      }
+} 
+
+
+
+#search-breyna::placeholder {
+    color: rgba(243, 243, 243, .7);
+}
+
+.punteos1 {
+    background-image: url(../imgs/decoracion/punteos1.svg);
+    background-size: contain;
+    position: relative;
+    opacity: .5;
+}

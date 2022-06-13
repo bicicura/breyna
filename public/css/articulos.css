@@ -1,0 +1,71 @@
+.article-banner {
+    background-image: url(../imgs/servicios/neurologia/articulos/acv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+main {
+    padding-top: 5rem;
+}
+
+.alz-banner {background-image: url(../imgs/servicios/neurologia/articulos/alzheimer.jpg); background-position: center;}
+.neuralgia-banner {background-image: url(../imgs/servicios/neurologia/articulos/neuralgia.jpg); background-position: center;}
+.parkinson-banner {background-image: url(../imgs/servicios/neurologia/articulos/parkinson.jpg); background-position: center;}
+.cervical-banner {background-image: url(../imgs/servicios/neurologia/articulos/cervical.jpg); background-position: center;}
+.sincope-banner {background-image: url(../imgs/servicios/neurologia/articulos/sincope.jpg); background-position: center;}
+.epilepsia-banner {background-image: url(../imgs/servicios/neurologia/articulos/epilepsia.jpg); background-position: center;}
+.epilepsia-banner {background-image: url(../imgs/servicios/neurologia/articulos/esclerosis.jpg); background-position: center;}
+.rehabilitacion-banner {background-image: url(../imgs/servicios/neurologia/articulos/rehabilitacion.jpg); background-position: center;}
+.rpg-banner {background-image: url(../imgs/servicios/neurologia/articulos/rpg.jpg); background-position: center;}
+.tumores-banner {background-image: url(../imgs/servicios/neurologia/articulos/tumores.jpg); background-position: center;}
+.neuropatias-banner {background-image: url(../imgs/servicios/neurologia/articulos/neuropatias.jpg); background-position: center;}
+.suenio-banner {background-image: url(../imgs/servicios/neurologia/articulos/suenio.jpg); background-position: center;}
+.ela-banner {background-image: url(../imgs/servicios/neurologia/articulos/ela.png); background-position: center;}
+.cardio1-banner {background-image: url(../imgs/servicios/cardio/cardio7.jpg); background-position: center;}
+.cardio2-banner {background-image: url(../imgs/servicios/cardio/cardio10.jpg); background-position: center;}
+.cardio3-banner {background-image: url(../imgs/servicios/cardio/cardio3.jpg); background-position: center;}
+.cardio4-banner {background-image: url(../imgs/servicios/cardio/cardio4.jpg); background-position: center;}
+.cardio5-banner {background-image: url(../imgs/servicios/cardio/cardio11.jpg); background-position: center;}
+.cardio6-banner {background-image: url(../imgs/servicios/cardio/cora.jpg); background-position: center;}
+.cardio7-banner {background-image: url(../imgs/servicios/cardio/cardio1.jpg); background-position: center;}
+.cardio8-banner {background-image: url(../imgs/servicios/cardio/cardio9.jpg); background-position: center;}
+
+.article-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 60%;
+    background-color: var(--breyna-blue);
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    z-index:0;
+}  
+
+.serv-li {
+    border-bottom: .35rem solid #014494!important;
+    background: linear-gradient(180deg, rgba(1, 68, 148, 0) -26.39%, rgba(1, 68, 148, 0.1) 71.69%)!important;
+}
+
+.serv-li:hover {
+    background: linear-gradient(180deg, rgba(1, 68, 148, 0) -26.39%, rgba(1, 68, 148, 0.1) 71.69%)!important;
+}
+
+.nav-ul {
+border-top: .35rem solid #014494!important;
+}
+
+nav ul li ul li {
+    color: white!important;
+}
+
+nav {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03)!important;
+}
+
+
+
+
